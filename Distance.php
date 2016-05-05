@@ -50,13 +50,13 @@ class Distance{
         //$d = $this->earth_radius * $c;  
         
         if($this->debug === false){
-            if($res <= 500){
+            if($res <= $default_radius){
                 $this->output = urldecode($data['city']);
             }else{
                 $this->output = '';    
             }
         }else{
-            if($res <= 500){
+            if($res <= $default_radius){
                 $this->output = $res;
             }
         }
